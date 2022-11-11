@@ -4,12 +4,17 @@
   align-items: center;
   gap: 60px 0px;
   margin-top: 60px;
-  margin-bottom: 60px;
+}
+
+.header-title h1{
+  font-size: 2rem;
+  padding-left: 20px;
 }
 
 .header-nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-right: 20px;
 }
 
 .header-nav a{
@@ -18,8 +23,25 @@
   border-radius: 4px;
 }
 
+.header-intro::before{
+  display: block;
+  content: "";
+  background-image: url(../img/deco.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 120px;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: -1;
+}
+
+.header-intro{
+  position: relative;
+}
+
 .header-intro h1{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .header-intro h3{

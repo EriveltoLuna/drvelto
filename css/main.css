@@ -1,6 +1,7 @@
 .main-exp-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding-top: 60px;
 }
 
 .main-exp-title h1 {
@@ -9,27 +10,43 @@
   color: #9c9c9c;
 }
 
-.main-exp-list {
-  display: grid;
-}
-
 .main-exp-list-intro {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .main-exp-list-intro h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
-.main-exp-items h3 {
-  margin-bottom: 20px;
+.main-exp-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-auto-flow: column;
+  gap: 25px 20px;
+}
+
+#juca,
+#rango,
+#bichos,
+#passare,
+#traquinas,
+#legal,
+#farofino,
+#albergaria,
+#babydog,
+#raimundinho,
+#domicilio {
+  padding-top: 10px;
+  text-align: end;
+  font-weight: normal;
+  font-size: 0.9rem;
+  grid-column: 1;
 }
 
 .main-exp-items {
   background-color: #f0f0f0;
-  width: 350px;
   padding: 10px;
-  margin: 0px auto 20px;
+  grid-column: 2;
 }
 
 .main-exp-items h3 {
@@ -44,23 +61,4 @@
   width: 3px;
   height: 100%;
   background-image: linear-gradient(#b629f8, #800add);
-}
-
-.main-exp-list-items-container {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 50px;
-}
-
-#rango,
-#bichos,
-#passare,
-#traquinas,
-#legal,
-#farofino,
-#albergaria,
-#babydog,
-#raimundinho,
-#domicilio {
-  justify-self: end;
 }
