@@ -1,28 +1,60 @@
 .main-exp-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding-top: 60px;
+  padding: 60px 20px 60px;
+  gap: 0px 60px;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .main-exp-container {
+    gap: 30px;
+  }
 }
 
 .main-exp-title h1 {
   font-size: 6rem;
-  line-height: 1.5;
   color: #9c9c9c;
 }
 
-.main-exp-list-intro {
-  margin-bottom: 50px;
+@media (max-width: 700px) {
+  .main-exp-title h1 {
+    font-size: 4rem;
+    text-align: right;
+  }
+}
+
+.main-exp-list {
+  padding-top: 20px;
 }
 
 .main-exp-list-intro h3 {
   font-size: 1.25rem;
+  padding-bottom: 30px;
+  color: #323232;
+  font-weight: normal;
+}
+
+@media (max-width: 700px) {
+  .main-exp-list-intro h3 {
+    font-size: 1rem;
+  }
 }
 
 .main-exp-list-container {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: auto 1fr;
   grid-auto-flow: column;
+  grid-column: 2;
   gap: 25px 20px;
+  padding-top: 40px;
+}
+
+@media (max-width:700px){
+  .main-exp-list-container {
+    grid-column: span 2;
+    margin: auto;
+  }
 }
 
 #juca,
@@ -51,6 +83,24 @@
 
 .main-exp-items h3 {
   position: relative;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+  .main-exp-items h3 {
+    font-size: 1rem;
+  }
+}
+
+.main-exp-items p {
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+  .main-exp-items p {
+    font-size: 0.9rem;
+  }
 }
 
 .main-exp-items h3::before {
@@ -59,6 +109,193 @@
   position: absolute;
   left: -12px;
   width: 3px;
+  height: 1.2rem;
+  background-image: linear-gradient(#b629f8, #800add);
+}
+
+.main-for-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 60px 20px 0px;
+  background-color: #141414;
+  color: #a3a3a3;
+  gap: 30px 60px;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .main-for-container {
+    gap: 30px 30px;
+  }
+}
+
+.main-for-title {
+  margin-bottom: 60px;
+  grid-row: span 3;
+}
+
+@media (max-width: 500px) {
+  .main-for-title {
+    grid-row: initial;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+}
+
+.main-for-title h1 {
+  font-size: 6rem;
+  color: #9c9c9c;
+}
+
+@media (max-width: 700px) {
+  .main-for-title h1 {
+    font-size: 4rem;
+  }
+}
+
+.main-for-intro h3 {
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .main-for-intro h3 {
+    font-size: 1rem;
+  }
+}
+
+.main-for-intro strong {
+  color: white;
+}
+
+.main-for-items {
+  max-width: 250px;
+  background-color: rgb(36, 36, 36);
+  padding: 15px 10px 0px;
+  grid-column: 2;
+}
+
+@media (max-width: 500px) {
+  .main-for-items {
+    grid-column: 2 span;
+    width: 200px;
+    margin: auto;
+  }
+}
+
+.main-for-items h3 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .main-for-items h3 {
+    font-size: 1.3rem;
+  }
+}
+
+.main-for-items h2 {
+  padding-bottom: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+@media (max-width: 700px) {
+  .main-for-items h2 {
+    font-size: 1rem;
+  }
+}
+
+.main-for-items h1 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+@media (max-width: 700px) {
+  .main-for-items h1 {
+    font-size: 1rem;
+  }
+}
+
+.main-for-idioma {
+  max-width: 250px;
+  background-color: rgb(36, 36, 36);
+  padding: 15px 10px;
+  margin-bottom: 100px;
+  grid-column: 2;
+}
+
+@media (max-width: 500px) {
+  .main-for-idioma {
+    grid-column: 2 span;
+    width: 200px;
+    margin: 0px auto 100px;
+  }
+}
+
+.main-for-idioma h3 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.main-for-idioma p {
+  color: white;
+  font-size: 1rem;
+}
+.main-for-idioma span {
+  color: #858585;
+}
+
+.main-for-items h3 {
+  position: relative;
+}
+
+.main-for-items h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -12px;
+  width: 3px;
   height: 100%;
   background-image: linear-gradient(#b629f8, #800add);
+}
+
+.main-for-items h3::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url(../img/curso.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: -52px;
+  top: 2px;
+}
+
+.main-for-idioma h3 {
+  position: relative;
+}
+
+.main-for-idioma h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -12px;
+  width: 3px;
+  height: 100%;
+  background-image: linear-gradient(#b629f8, #800add);
+}
+
+.main-for-idioma h3::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url(../img/idioma.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: -52px;
+  top: 2px;
 }

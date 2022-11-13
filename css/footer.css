@@ -1,0 +1,119 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  background-color: black;
+  color: #a3a3a3;
+  padding: 90px 30px 20px;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-items: center;
+    padding: 70px 30px 20px 50px;
+  }
+}
+
+.footer-intro h1::before {
+  display: block;
+  content: "";
+  background-image: url(../img/deco.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: -150px;
+  left: 80px;
+}
+
+@media (max-width: 700px) {
+  .footer-intro h1::before {
+    top: -130px;
+    left: 30%;
+  }
+}
+
+.footer-intro {
+  max-width: 300px;
+}
+
+@media (max-width: 700px) {
+  .footer-intro {
+    max-width: 70%;
+  }
+}
+
+.footer-intro h1 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  position: relative;
+  padding-right: 20px;
+}
+
+@media (max-width: 700px) {
+  .footer-intro h1 {
+    font-size: 1.2rem;
+    padding-top: 25px;
+    padding-right: 0px;
+  }
+}
+
+.footer-contact h1 {
+  font-weight: normal;
+  padding-bottom: 10px;
+  font-size: 1.75rem;
+  overflow-wrap: anywhere;
+}
+
+#telefone,
+#instagram,
+#email {
+  position: relative;
+}
+
+#telefone::before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  background-image: url(../img/telefone.png);
+  background-repeat: no-repeat;
+  left: -40px;
+}
+
+#instagram::before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  background-image: url(../img/instagram.png);
+  background-repeat: no-repeat;
+  left: -40px;
+}
+
+#email::before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  background-image: url(../img/email.png);
+  background-repeat: no-repeat;
+  left: -40px;
+}
+
+.footer::after{
+  display: block;
+  content: "Feito em HTML5 e CSS3 por Velto Luna";
+  position: relative;
+  color: #a3a3a3;
+  grid-column: 1 / -1;
+  margin: auto;
+  padding-top: 30px;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
