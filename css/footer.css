@@ -5,6 +5,7 @@
   background-color: black;
   color: #a3a3a3;
   padding: 90px 30px 20px;
+  position: relative;
 }
 
 @media (max-width: 700px) {
@@ -16,7 +17,7 @@
   }
 }
 
-.footer-intro h1::before {
+.footer::before {
   display: block;
   content: "";
   background-image: url(../img/deco.png);
@@ -24,19 +25,20 @@
   position: absolute;
   width: 130px;
   height: 130px;
-  top: -150px;
-  left: 80px;
+  top: -55px;
+  left: 10%;
 }
 
 @media (max-width: 700px) {
-  .footer-intro h1::before {
-    top: -130px;
-    left: 30%;
+  .footer::before {
+    left: auto;
+    right: auto;
   }
 }
 
 .footer-intro {
   max-width: 300px;
+  position: relative;
 }
 
 @media (max-width: 700px) {
@@ -48,7 +50,6 @@
 .footer-intro h1 {
   font-size: 1.4rem;
   font-weight: normal;
-  position: relative;
   padding-right: 20px;
 }
 
@@ -106,7 +107,7 @@
   left: -40px;
 }
 
-.footer::after{
+.footer::after {
   display: block;
   content: "Feito em HTML5 e CSS3 por Velto Luna";
   position: relative;

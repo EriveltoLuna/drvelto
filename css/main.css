@@ -12,6 +12,13 @@
   }
 }
 
+@media (max-width: 400px) {
+  .main-exp-container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+}
+
 .main-exp-title h1 {
   font-size: 6rem;
   color: #9c9c9c;
@@ -24,8 +31,27 @@
   }
 }
 
+@media (max-width: 400px) {
+  .main-exp-title h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-exp-title h1 br {
+    display: none;
+  }
+}
+
 .main-exp-list {
   padding-top: 20px;
+}
+
+@media (max-width: 400px) {
+  .main-exp-list-intro {
+    grid-column: 1 / -1;
+  }
 }
 
 .main-exp-list-intro h3 {
@@ -50,10 +76,16 @@
   padding-top: 40px;
 }
 
-@media (max-width:700px){
+@media (max-width: 700px) {
   .main-exp-list-container {
     grid-column: span 2;
     margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-exp-list-container {
+    padding-top: 0px;
   }
 }
 
@@ -129,6 +161,14 @@
   }
 }
 
+@media (max-width: 400px) {
+  .main-for-container {
+    grid-template-columns: 1fr;
+    gap: 30px 0px;
+    justify-items: center;
+  }
+}
+
 .main-for-title {
   margin-bottom: 60px;
   grid-row: span 3;
@@ -136,9 +176,14 @@
 
 @media (max-width: 500px) {
   .main-for-title {
-    grid-row: initial;
     margin-bottom: 0px;
-    align-items: center;
+    grid-row: unset;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-for-title {
+    grid-column: 1 / -1;
   }
 }
 
@@ -150,6 +195,31 @@
 @media (max-width: 700px) {
   .main-for-title h1 {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-for-title h1 {
+    line-height: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-for-title h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-for-title h1 br {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-for-intro {
+    grid-column: 1 / -1;
   }
 }
 
@@ -180,6 +250,13 @@
     grid-column: 2 span;
     width: 200px;
     margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-for-items {
+    margin: 0px;
+    
   }
 }
 
@@ -232,6 +309,13 @@
     grid-column: 2 span;
     width: 200px;
     margin: 0px auto 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-for-idioma {
+    margin: 0px 0px 100px 0px;
+    grid-column: 1 span;
   }
 }
 
