@@ -61,11 +61,15 @@
   }
 }
 
-.footer-contact h1 {
+.footer-contact h1{
   font-weight: normal;
   padding-bottom: 10px;
   font-size: 1.75rem;
   overflow-wrap: anywhere;
+}
+
+.footer-contact h1 a{
+  color: #a3a3a3;
 }
 
 #telefone,
